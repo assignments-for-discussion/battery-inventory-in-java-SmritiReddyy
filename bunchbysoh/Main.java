@@ -23,7 +23,6 @@ public class Main {
         counts.failed++;
       }
     }
-
     return counts;
   }
 
@@ -32,12 +31,12 @@ public class Main {
     int[] presentCapacities = {115, 118, 80, 95, 91, 77};
     CountsBySoH counts = countBatteriesByHealth(presentCapacities);
 
-    // Print the counts
+    // Print the status of batteries 
     System.out.println("Healthy Batteries: " + counts.healthy);
     System.out.println("Exchange Batteries: " + counts.exchange);
     System.out.println("Failed Batteries: " + counts.failed);
 
-    // Existing asserts
+    // Given asserts
     assert(counts.healthy == 2);
     assert(counts.exchange == 3);
     assert(counts.failed == 1);
